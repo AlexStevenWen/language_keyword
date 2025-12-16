@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/language_keyword/', // 注意：這裡必須前後都有斜線，且名稱要跟 GitHub Repo 一樣
+  base: '/language_keyword/',  // 務必加上這一行，前後都要有斜線
 })

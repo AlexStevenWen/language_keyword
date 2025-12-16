@@ -1,16 +1,79 @@
-# React + Vite
+# Typing Practice & Keyboard Translator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A multi-language typing practice and instant translation tool built with **React** and **Lucide Icons**.  
+Supports real-time word pronunciation, sentence translation, and floating tooltips.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Typing Practice Mode**  
+  - Practice typing multi-language texts.
+  - Highlight correct/incorrect characters in real-time.
+  - Accuracy tracking.
+  - Auto-scroll reference text.
+  - Click on words to see phonetic and translation.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Keyboard Translator Mode**  
+  - Translate sentences or words instantly.
+  - Floating tooltip shows word translation while typing.
+  - Speech synthesis for both input and reference text.
+  - Offline fallback for translations.
 
-## Expanding the ESLint configuration
+- **Supported Languages**  
+  - English (`en-US`)
+  - Traditional Chinese (`zh-TW`)
+  - Japanese (`ja-JP`)
+  - Korean (`ko-KR`)
+  - Vietnamese (`vi-VN`)
+  - Indonesian (`id-ID`)
+  - Hindi (`hi-IN`)
+  - Portuguese (`pt-PT`)
+  - Arabic (`ar-SA`)
+  - German (`de-DE`)
+  - Russian (`ru-RU`)
+  - Spanish (`es-ES`)
+  - French (`fr-FR`)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **File Upload & Download**  
+  - Upload `.txt` files as practice/reference text.
+  - Download sample practice file.
+
+- **Real-time Pronunciation**  
+  - Auto-speak words when correctly typed.
+  - Speak full input or reference text.
+
+- **Floating Tooltip**  
+  - Shows word translation and phonetic near cursor.
+  - Click to play pronunciation.
+
+- **Keyboard Shortcuts**  
+  | Shortcut | Action |
+  |----------|--------|
+  | Ctrl + P | Toggle practice mode |
+  | Ctrl + Enter | Speak full input text |
+  | Alt + Enter | Speak current word |
+  | Alt + V | Toggle reference panel |
+  | Ctrl + I | Focus input box |
+  | Ctrl + U | Upload file |
+  | Ctrl + Alt + D | Download sample file |
+  | Escape | Clear input |
+
+---
+
+## Installation
+
+```bash
+# Clone repository
+git clone https://github.com/AlexStevenWen/language_keyword.git
+cd typing-practice-translator
+
+# Install dependencies
+npm install
+# or
+yarn install
+
+# Start development server
+npm start
+# or
+yarn start
